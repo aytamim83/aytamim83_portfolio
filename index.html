@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mohammad Tamim (Abu Yousuf Tamim) - Software & Backend Engineer | CSE Student at Gopalganj Science & Technology University (GSTU). Systems architecture, competitive programming, C++, Java, Python.">
+  <meta name="keywords" content="Mohammad Tamim, Abu Yousuf Tamim, Aytamim83, Software Engineer, Backend Engineer, C++, Java, Python, Codeforces, GSTU, BSMRSTU, Portfolio">
+  <meta name="author" content="Mohammad Tamim">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohammad Tamim | Software & Backend Engineer">
+  <meta property="og:description" content="Software & Backend Engineering portfolio of Mohammad Tamim. Systems design, algorithmic problem solving, and scalable software architecture.">
+
+  <title>Mohammad Tamim | Software & Backend Engineer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Dynamic Interactive Particle Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Floating Toast Notification -->
+  <div class="toast-notice" id="toastNotice">✓ Copied to clipboard!</div>
+
+  <!-- =========================================================================
+       Navigation Bar
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo-link">
+        <span class="logo-prompt">tamim@root:~$</span>
+        <span class="logo-cursor"></span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#problem-solving" class="nav-link">Problem Solving</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- GitHub Link -->
+        <a href="https://github.com/aytamim83" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-icon" title="GitHub / aytamim83">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+
+        <!-- Gmail Direct Compose Link -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abuyousuftamim0@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-icon link-gmail" title="Compose Email to abuyousuftamim0@gmail.com">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+
+        <a href="#contact" class="btn btn-primary">Connect</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         Hero Section
+         ========================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge-status">
+              <span class="status-dot"></span>
+              <span>Open to Software & Backend Engineering Roles</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text dynamic-name">Mohammad Tamim</span>
+            </h1>
+
+            <div class="hero-subtitle-box">
+              <span style="color: var(--accent-emerald);">&gt;</span>
+              <span class="typewriter-text" id="typewriterText">Software & Backend Engineer</span>
+              <span class="typewriter-cursor"></span>
+            </div>
+
+            <p class="hero-description">
+              2nd-Year Computer Science & Engineering student at <strong>Gopalganj Science & Technology University (GSTU)</strong>. Passionate about low-level memory efficiency, clean object-oriented architecture, and robust backend systems. Solving problems daily in <strong>C++</strong>, <strong>Java</strong>, and <strong>Python</strong>.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>View Engineering Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#terminal-section" class="btn btn-outline">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+                <span>Interactive Terminal</span>
+              </a>
+            </div>
+
+            <!-- Social & Profile Links Row -->
+            <div class="hero-socials">
+              <!-- GitHub -->
+              <a href="https://github.com/aytamim83" target="_blank" rel="noopener noreferrer" class="social-pill link-github" title="GitHub Profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>aytamim83</span>
+              </a>
+
+              <!-- Codeforces -->
+              <a href="https://codeforces.com/profile/Aytamim83" target="_blank" rel="noopener noreferrer" class="social-pill link-cf" title="Codeforces Profile">
+                <div class="cf-logo-bars" style="height: 14px;">
+                  <span class="cf-bar-1" style="height: 8px;"></span>
+                  <span class="cf-bar-2" style="height: 14px;"></span>
+                  <span class="cf-bar-3" style="height: 11px;"></span>
+                </div>
+                <span>CF: Aytamim83</span>
+              </a>
+
+              <!-- WhatsApp -->
+              <a href="https://wa.me/8801344623783" target="_blank" rel="noopener noreferrer" class="social-pill link-wa" title="Chat on WhatsApp">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                <span>WhatsApp</span>
+              </a>
+
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/abuyousuf.tamim.1" target="_blank" rel="noopener noreferrer" class="social-pill link-fb" title="Facebook Profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Terminal Card in Hero -->
+          <div class="hero-terminal-col" id="terminal-section">
+            <div class="terminal-window">
+              <div class="terminal-header">
+                <div class="terminal-buttons">
+                  <span class="term-btn term-close"></span>
+                  <span class="term-btn term-minimize"></span>
+                  <span class="term-btn term-maximize"></span>
+                </div>
+                <div class="terminal-title">bash — tamim@server: ~</div>
+                <div class="terminal-status-badge">
+                  <span class="status-dot"></span> online
+                </div>
+              </div>
+
+              <!-- 1-Click Quick Commands Bar -->
+              <div class="term-quick-bar">
+                <span class="term-quick-label">Quick Run:</span>
+                <button class="cmd-pill" data-cmd="whoami">whoami</button>
+                <button class="cmd-pill" data-cmd="dsa">dsa</button>
+                <button class="cmd-pill" data-cmd="cpp">cpp</button>
+                <button class="cmd-pill" data-cmd="python">python</button>
+                <button class="cmd-pill" data-cmd="java">java</button>
+                <button class="cmd-pill" data-cmd="math">math</button>
+                <button class="cmd-pill" data-cmd="eee">eee</button>
+                <button class="cmd-pill" data-cmd="accounting">accounting</button>
+                <button class="cmd-pill" data-cmd="cf">cf</button>
+                <button class="cmd-pill" data-cmd="battleship">battleship</button>
+                <button class="cmd-pill" data-cmd="langs">langs</button>
+                <button class="cmd-pill" data-cmd="curl api/tamim">curl</button>
+                <button class="cmd-pill" data-cmd="clear">clear</button>
+              </div>
+
+              <div class="terminal-body" id="terminalBody">
+                <div class="term-prompt-line" id="termPromptLine">
+                  <span class="term-prompt-label">tamim@backend:~$</span>
+                  <input type="text" class="term-input" id="terminalInput" placeholder="click quick buttons or type 'help'..." autocomplete="off" spellcheck="false" autofocus>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Metrics Strip -->
+        <div class="metrics-strip">
+          <div class="metric-card">
+            <div class="metric-label">Target Focus</div>
+            <div class="metric-value mono-accent">Backend & Systems</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Core Languages</div>
+            <div class="metric-value">C++, Python, Java, C</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Problem Solving</div>
+            <div class="metric-value" style="color: var(--accent-cf);">DSA (Intermediate) | CF: Aytamim83</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Analytical Rigor</div>
+            <div class="metric-value" style="color: var(--accent-cyan);">Discrete Math & Vectors</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         About Section
+         ========================================================================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="section-tag">// Engineering Mindset</div>
+          <h2 class="section-title">Architecting Robust Systems From The Ground Up</h2>
+          <p class="section-subtitle">Bridging algorithmic logic, clean object-oriented architecture, and modern backend fundamentals.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am <strong>Mohammad Tamim (Abu Yousuf Tamim)</strong>, an aspiring Software & Backend Engineer currently in my 2nd year studying Computer Science & Engineering at <strong>Gopalganj Science & Technology University (GSTU)</strong>. My engineering journey is built upon deep analytical foundations: mastering <strong>Discrete Mathematics</strong>, <strong>Differential Calculus</strong>, and <strong>Vector Analysis</strong> to write mathematically rigorous, optimized code.
+            </p>
+            <p>
+              I am strong in <strong>C++</strong> and <strong>Python</strong>, intermediate in <strong>DSA</strong> (actively solving on Codeforces as <code>Aytamim83</code>), and have engineered complex desktop software including a full <strong>2-Player Battleship Combat Game Engine</strong> in Java using OOP state machines, collision detection, and custom particle physics.
+            </p>
+            <p>
+              Beyond traditional programming, I bring a unique interdisciplinary lens: studying <strong>Semiconductor Physics & Machine Mechanisms</strong> (bridging software with physical computing), understanding <strong>Financial Accounting & Ledger Integrity</strong> (vital for FinTech and transactional backend systems), and communicating fluently across <strong>English</strong>, <strong>Arabic</strong>, and <strong>Bengali</strong>.
+            </p>
+          </div>
+
+          <div class="about-pillars">
+            <ul class="philosophy-list">
+              <li class="philosophy-item">
+                <div class="philosophy-icon">📐</div>
+                <div>
+                  <h4>Mathematical & Theoretical Bedrock</h4>
+                  <p>Grounding algorithm analysis in Discrete Mathematics, Differential Calculus, and 3D Vector coordinate systems.</p>
+                </div>
+              </li>
+              <li class="philosophy-item">
+                <div class="philosophy-icon">🎮</div>
+                <div>
+                  <h4>Complex Simulation & OOP Architecture</h4>
+                  <p>Architecting state-driven systems with decoupled game loops, collision matrices, and physics simulations.</p>
+                </div>
+              </li>
+              <li class="philosophy-item">
+                <div class="philosophy-icon">⚡</div>
+                <div>
+                  <h4>Hardware & Financial Literacy</h4>
+                  <p>Semiconductor device physics, machine mechanisms, and transactional accounting principles for reliable backend backbones.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Skills & Technical Matrix
+         ========================================================================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="section-tag">// Technical Matrix</div>
+          <h2 class="section-title">Core Competencies & Analytical Rigor</h2>
+          <p class="section-subtitle">Bridging programming languages, data structures, theoretical mathematics, and interdisciplinary engineering.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- 1. Data Structures & Algorithms (DSA) - COMPLETELY SEPARATE -->
+          <div class="skill-card skill-card-dsa" id="card-dsa">
+            <div class="skill-header">
+              <div class="skill-icon-badge" style="color: #06b6d4; background: rgba(6, 182, 212, 0.12); border-color: rgba(6, 182, 212, 0.3);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">Data Structures & Algorithms (DSA)</h3>
+                <span class="skill-badge-level level-inter">Intermediate Level</span>
+              </div>
+            </div>
+            <p class="skill-item-desc">
+              Strong theoretical understanding and implementation of linear/non-linear data structures, algorithmic paradigms, dynamic programming, and asymptotic Big-O efficiency.
+            </p>
+
+            <button class="expand-toggle-btn" aria-expanded="false" title="Click to view all studied topics">
+              <span>📚 Click to inspect all topics & algorithms covered</span>
+              <span class="toggle-chevron">▾</span>
+            </button>
+
+            <!-- Expandable Detailed Topics -->
+            <div class="topic-expandable">
+              <div class="topic-category-group">
+                <div class="topic-category-title">Linear Data Structures</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Arrays & Dynamic Arrays</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Singly & Doubly Linked Lists</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Stacks (LIFO & Monotonic Stacks)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Queues & Circular Deques</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Tree & Hierarchical Structures</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Binary Trees & Traversals</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Binary Search Trees (BST)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Min/Max Heaps & Priority Queues</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Trie (Prefix Tree)</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Graph Theory & Algorithms</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Adjacency List & Matrix</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Breadth-First Search (BFS)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Depth-First Search (DFS)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Cycle Detection in Graphs</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Topological Sort</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Dijkstra's Shortest Path Basics</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Algorithmic Paradigms</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Dynamic Programming (Memoization & Tabulation)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Greedy Optimization</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Binary Search on Answer Range</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Two Pointers & Sliding Window</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Divide and Conquer</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Complexity Analysis</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Big-O, Big-Omega, Big-Theta</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Auxiliary Space vs In-Place Optimization</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Recursion Tree & Master Theorem</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. C++ Programming -->
+          <div class="skill-card" id="card-cpp">
+            <div class="skill-header">
+              <div class="skill-icon-badge" style="color: #6366f1; background: rgba(99, 102, 241, 0.12); border-color: rgba(99, 102, 241, 0.3);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">C++ Programming</h3>
+                <span class="skill-badge-level level-mastered">Proficient</span>
+              </div>
+            </div>
+            <p class="skill-item-desc">
+              Extensive mastery of modern C++, deep Standard Template Library (STL) utilization, memory management, pointers, and object-oriented performance.
+            </p>
+
+            <button class="expand-toggle-btn" aria-expanded="false" title="Click to view all C++ topics">
+              <span>📚 Click to inspect all C++ & STL topics covered</span>
+              <span class="toggle-chevron">▾</span>
+            </button>
+
+            <!-- Expandable Detailed Topics -->
+            <div class="topic-expandable">
+              <div class="topic-category-group">
+                <div class="topic-category-title">Standard Template Library (STL)</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> std::vector & dynamic arrays</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> std::map & std::unordered_map</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> std::set & std::multiset</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> std::priority_queue (Max/Min Heap)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> std::sort with Custom Comparators</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> std::lower_bound & upper_bound</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> std::pair, tuple & iterators</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Memory & Pointers</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Pointers & Dereferencing</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Dynamic Memory (new / delete)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Pass by Value vs Pass by Reference</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Const Correctness</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Stack vs Heap Memory Layout</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Object-Oriented Programming (OOP)</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Classes, Constructors & Destructors</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Encapsulation & Access Specifiers</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Inheritance (Single & Multiple)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Polymorphism & Virtual Functions</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Operator Overloading</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Performance & Fast I/O</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> cin.tie(NULL) & sync_with_stdio</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Cache-Friendly Contiguous Vectors</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Python Programming -->
+          <div class="skill-card" id="card-python">
+            <div class="skill-header">
+              <div class="skill-icon-badge" style="color: #38bdf8; background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.3);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a5 5 0 0 0-5 5v2H5a3 3 0 0 0-3 3v4a3 3 0 0 0 3 3h2v-2a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v2h2a3 3 0 0 0 3-3v-4a3 3 0 0 0-3-3h-2V7a5 5 0 0 0-5-5z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">Python Programming</h3>
+                <span class="skill-badge-level level-mastered">Proficient</span>
+              </div>
+            </div>
+            <p class="skill-item-desc">
+              Strong grasp of Pythonic paradigms, advanced comprehensions, collections module, automation scripting, and algorithmic prototyping.
+            </p>
+
+            <button class="expand-toggle-btn" aria-expanded="false" title="Click to view all Python topics">
+              <span>📚 Click to inspect all Python concepts & modules covered</span>
+              <span class="toggle-chevron">▾</span>
+            </button>
+
+            <!-- Expandable Detailed Topics -->
+            <div class="topic-expandable">
+              <div class="topic-category-group">
+                <div class="topic-category-title">Advanced Python Syntax</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> List, Dict & Set Comprehensions</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Generators & yield expressions</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Lambda Functions, map() & filter()</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> *args & **kwargs Unpacking</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Decorators & Context Managers (with)</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Built-In & Collections Module</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> collections.deque (O(1) operations)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> collections.defaultdict & Counter</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> heapq Module (Min-Heaps)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> bisect Module (Binary Search)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> itertools (permutations, combinations)</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Backend Scripting & Tools</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> File Handling (JSON, CSV, Plain Text)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> OS & Sys Modules (File/Path automation)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> HTTP Requests & REST API Integration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Java & Battleship Engine Architecture -->
+          <div class="skill-card" id="card-java">
+            <div class="skill-header">
+              <div class="skill-icon-badge" style="color: #f97316; background: rgba(249, 115, 22, 0.12); border-color: rgba(249, 115, 22, 0.3);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                  <line x1="6" y1="1" x2="6" y2="4"></line>
+                  <line x1="10" y1="1" x2="10" y2="4"></line>
+                  <line x1="14" y1="1" x2="14" y2="4"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">Java & Battleship Engine Architecture</h3>
+                <span class="skill-badge-level level-inter">Intermediate</span>
+              </div>
+            </div>
+            <p class="skill-item-desc">
+              Strong object-oriented software engineering applied to building the full 2-Player Battleship Game Engine with custom particle physics and state machines.
+            </p>
+
+            <button class="expand-toggle-btn" aria-expanded="false" title="Click to view all Java topics">
+              <span>📚 Click to inspect Java OOP & Battleship Engine architecture</span>
+              <span class="toggle-chevron">▾</span>
+            </button>
+
+            <!-- Expandable Detailed Topics -->
+            <div class="topic-expandable">
+              <div class="topic-category-group">
+                <div class="topic-category-title">Core Java & OOP</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Encapsulation & Access Modifiers</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Inheritance & Method Overriding</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Collections (ArrayList, HashMap, Iterators)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Exception Handling & Robust State Validation</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Battleship Engine Architectural Mechanics</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Strict State Machine (Placement, Pass, Battle, GameOver)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> 10x10 Matrix Fleet Placement Validation</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Fleet Specs: Carrier, Battleship, Cruiser, Submarine, Destroyer</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Concealed Turn-Based State Management</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Swing GUI & Particle Simulation</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Java Swing & AWT (JFrame, JPanel, paintComponent)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Timer-driven Particle Animation (Missile impact, explosions)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Event Listeners (MouseListener, ActionListener)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Dynamic Audio Playback (javax.sound.sampled)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Mathematical Rigor - COMPLETELY SEPARATE -->
+          <div class="skill-card skill-card-math" id="card-math">
+            <div class="skill-header">
+              <div class="skill-icon-badge" style="color: #38bdf8; background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.3);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">Mathematical Rigor & Foundations</h3>
+                <span class="skill-badge-level level-mastered">Mastered / Strong</span>
+              </div>
+            </div>
+            <p class="skill-item-desc">
+              Strong mathematical foundation underpinning computational logic, algorithm proofs, function optimization, and 3D coordinate space modeling.
+            </p>
+
+            <button class="expand-toggle-btn" aria-expanded="false" title="Click to view all Math topics">
+              <span>📚 Click to inspect all Discrete Math, Calculus & Vector topics</span>
+              <span class="toggle-chevron">▾</span>
+            </button>
+
+            <!-- Expandable Detailed Topics -->
+            <div class="topic-expandable">
+              <div class="topic-category-group">
+                <div class="topic-category-title">Discrete Mathematics (Mastered)</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Propositional & Predicate Logic (Truth Tables, Quantifiers)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Set Theory, Cartesian Products & Venn Diagrams</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Relations, Equivalence Classes & Partitions</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Combinatorics (Permutations, Combinations, Pigeonhole)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Graph Theory (Paths, Cycles, Trees, Bipartite Graphs)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Mathematical Induction & Proof by Contradiction</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Differential Calculus (Strong)</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Limits & Continuity</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> First & Higher Order Derivatives</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Product, Quotient & Chain Rules</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Rates of Change & Tangent Slopes</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Function Optimization (Maxima & Minima)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Analytical Curve Analysis</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Vector Analysis (Strong)</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> 2D & 3D Vector Geometry</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Dot (Scalar) Product & Orthogonality</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Cross (Vector) Product & Normal Vectors</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Scalar & Vector Projections</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> 3D Coordinate Transformations & Unit Vectors</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Gradients & Directional Derivatives</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Electrical & Electronic Engineering (EEE) - COMPLETELY SEPARATE -->
+          <div class="skill-card skill-card-eee" id="card-eee">
+            <div class="skill-header">
+              <div class="skill-icon-badge" style="color: #f59e0b; background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.3);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">Electrical & Electronic Engineering (EEE)</h3>
+                <span class="skill-badge-level" style="color: #f59e0b; background: rgba(245, 158, 11, 0.12);">Undergraduate Study</span>
+              </div>
+            </div>
+            <p class="skill-item-desc">
+              Foundational understanding of hardware physics, solid-state electronic devices, semiconductors, and electromechanical machine mechanisms.
+            </p>
+
+            <button class="expand-toggle-btn" aria-expanded="false" title="Click to view all EEE topics">
+              <span>📚 Click to inspect all Semiconductor & Machine topics covered</span>
+              <span class="toggle-chevron">▾</span>
+            </button>
+
+            <!-- Expandable Detailed Topics -->
+            <div class="topic-expandable">
+              <div class="topic-category-group">
+                <div class="topic-category-title">Semiconductor Physics & Devices</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Energy Bands & Bandgap Theory</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Intrinsic vs Extrinsic Semiconductors (P-type/N-type)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> P-N Junction Formation & Depletion Layer</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Diodes: Forward/Reverse Bias, Rectification & Zener</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Bipolar Junction Transistors (BJT: CE/CB/CC)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> MOSFET Switches & Physical Logic Gates</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Machine Mechanisms & Power</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Magnetic Circuits & Flux Dynamics</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> DC Motors & Operating Principles (Back EMF)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> DC Generators & EMF Generation</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> AC Induction Motors & Rotating Fields</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Transformers & Voltage Conversion</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Electromechanical Torque & Rotational Dynamics</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Circuit Fundamentals</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Ohm's Law & Kirchhoff's Current/Voltage Laws (KCL/KVL)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Voltage & Current Divider Rules</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> AC/DC Analysis & Capacitive/Inductive Impedance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Financial Accounting & Business Logic - COMPLETELY SEPARATE -->
+          <div class="skill-card skill-card-accounting" id="card-accounting">
+            <div class="skill-header">
+              <div class="skill-icon-badge" style="color: #10b981; background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.3);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">Financial Accounting & Business Logic</h3>
+                <span class="skill-badge-level level-mastered">Business Acumen</span>
+              </div>
+            </div>
+            <p class="skill-item-desc">
+              Strong grasp of financial mechanics, double-entry ledgers, balance sheets, and transactional integrity essential for FinTech & backend payment systems.
+            </p>
+
+            <button class="expand-toggle-btn" aria-expanded="false" title="Click to view all Accounting topics">
+              <span>📚 Click to inspect all Accounting & Business Logic topics covered</span>
+              <span class="toggle-chevron">▾</span>
+            </button>
+
+            <!-- Expandable Detailed Topics -->
+            <div class="topic-expandable">
+              <div class="topic-category-group">
+                <div class="topic-category-title">Double-Entry Bookkeeping Principles</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Fundamental Accounting Equation (Assets = Liabilities + Equity)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Golden Rules of Debit and Credit</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Dual-Aspect Concept in Financial Transactions</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Source Documents & Voucher Verification</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Ledgers & The Accounting Cycle</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Journalizing Business Transactions</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Posting to General Ledgers & Subsidiary Ledgers</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Balancing Ledger Accounts</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Trial Balance Preparation & Error Detection</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Adjusting & Closing Entries</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Financial Statements & Reporting</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Income Statement (Revenues, Expenses, Net Profit/Loss)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Balance Sheet (Assets, Liabilities, Owner's Capital)</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Cash Flow Tracking Fundamentals</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Depreciation & Asset Valuation Basics</span>
+                </div>
+              </div>
+
+              <div class="topic-category-group">
+                <div class="topic-category-title">Relevance to Software & FinTech Backends</div>
+                <div class="topic-pills-wrap">
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Designing ACID-Compliant Transaction Tables</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Preventing Double-Spending via Debit/Credit Symmetry</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Immutable Financial Audit Trails & Event Sourcing</span>
+                  <span class="topic-item-pill"><span class="topic-check-icon">✓</span> Automated Reconciliation Systems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Natural Spoken Languages Strip -->
+        <div style="margin-top: 3.5rem;">
+          <div style="text-align: center; margin-bottom: 1.5rem;">
+            <div class="section-tag" style="color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.3); background: rgba(6, 182, 212, 0.1);">
+              // Global Communication
+            </div>
+            <h3 style="color: var(--text-highlight); font-size: 1.4rem;">Multilingual Communication Proficiency</h3>
+          </div>
+
+          <div class="languages-strip">
+            <div class="lang-card">
+              <div class="lang-icon">EN</div>
+              <div>
+                <div class="lang-name">English <span class="skill-badge-level level-mastered">Fluent</span></div>
+                <div class="lang-desc">Technical documentation, software collaboration & fluent communication</div>
+              </div>
+            </div>
+
+            <div class="lang-card">
+              <div class="lang-icon" style="color: #ffb830; background: rgba(255, 184, 48, 0.1);">AR</div>
+              <div>
+                <div class="lang-name">Arabic (العربية) <span class="skill-badge-level" style="color: #ffb830; background: rgba(255, 184, 48, 0.12);">Proficient</span></div>
+                <div class="lang-desc">Strong reading, comprehension & spoken communication capabilities</div>
+              </div>
+            </div>
+
+            <div class="lang-card">
+              <div class="lang-icon" style="color: #22c55e; background: rgba(34, 197, 94, 0.1);">BN</div>
+              <div>
+                <div class="lang-name">Bengali (বাংলা) <span class="skill-badge-level" style="color: #22c55e; background: rgba(34, 197, 94, 0.12);">Native</span></div>
+                <div class="lang-desc">Native language, complete verbal & written eloquence</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Featured Projects
+         ========================================================================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="section-tag">// Engineering Work</div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications showcasing architectural rigor, problem solving, and system design.</p>
+        </div>
+
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="backend">Backend & Architecture</button>
+          <button class="filter-btn" data-filter="algorithms">C++ & Algorithms</button>
+          <button class="filter-btn" data-filter="systems">Systems & CLI</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Battleship Game Engine -->
+          <article class="project-card" data-category="backend">
+            <div class="project-top">
+              <span class="project-badge">Java / OOP Architecture</span>
+              <a href="https://github.com/aytamim83" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+            </div>
+
+            <h3 class="project-card-title">Battleship 2-Player Game Engine & Combat Simulator</h3>
+            <p class="project-description">
+              A complete object-oriented naval combat engine developed in Java. Engineered with robust state machine transitions, matrix coordinate collision detection, particle physics, and sound synthesis.
+            </p>
+
+            <ul class="project-highlights">
+              <li>Architected discrete game lifecycle states: <code>PLACEMENT</code>, <code>PASS_SCREEN</code>, <code>BATTLE</code>, <code>GAME_OVER</code></li>
+              <li>Engineered 10x10 matrix fleet placement validation with automatic boundary checking and overlap prevention</li>
+              <li>Built real-time timer-driven particle physics simulation for explosions and missile impacts</li>
+              <li>Integrated event-driven Swing interface with custom audio playback</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">OOP</span>
+              <span class="tech-tag">Swing / AWT</span>
+              <span class="tech-tag">State Machine</span>
+              <span class="tech-tag">Particle Physics</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/aytamim83" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span>View Source Code</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Algorithmic Problem Solving Engine -->
+          <article class="project-card" data-category="algorithms">
+            <div class="project-top">
+              <span class="project-badge" style="color: var(--accent-cf); border-color: rgba(255, 184, 48, 0.3); background: rgba(255, 184, 48, 0.1);">Codeforces: Aytamim83</span>
+              <a href="https://codeforces.com/profile/Aytamim83" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Codeforces">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+            </div>
+
+            <h3 class="project-card-title">Codeforces Algorithmic Solutions & DSA Repository</h3>
+            <p class="project-description">
+              A curated collection of optimal solutions to competitive programming challenges on Codeforces (Handle: <strong>Aytamim83</strong>). Rigorous adherence to $O(N)$ and $O(\log N)$ asymptotic boundaries.
+            </p>
+
+            <ul class="project-highlights">
+              <li>Implementation of greedy logic, number theory, bit manipulation, and combinatorics</li>
+              <li>Benchmarked against strict time limit constraints (under 1.0s) and minimal auxiliary space</li>
+              <li>Modular, reusable template library leveraging modern C++ Standard Template Library (STL)</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">STL</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">Codeforces</span>
+              <span class="tech-tag">Optimization</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://codeforces.com/profile/Aytamim83" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color: var(--accent-cf);">
+                <span>Codeforces Profile</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <a href="https://github.com/aytamim83" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span>GitHub Repo</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Terminal Portfolio CLI Engine -->
+          <article class="project-card" data-category="systems">
+            <div class="project-top">
+              <span class="project-badge">Web / CLI Engine</span>
+              <a href="https://github.com/aytamim83" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+            </div>
+
+            <h3 class="project-card-title">Interactive Terminal CLI Simulation Engine</h3>
+            <p class="project-description">
+              A developer-first interactive CLI environment engineered for the browser. Parses input commands, maintains command history buffers, and renders system telemetry in real time.
+            </p>
+
+            <ul class="project-highlights">
+              <li>Command dispatcher supporting <code>help</code>, <code>whoami</code>, <code>skills</code>, <code>curl</code>, <code>clear</code></li>
+              <li>Arrow key navigation for history recollection and instant terminal feedback</li>
+              <li>Zero external frameworks — pure vanilla JavaScript engineered for sub-millisecond execution</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CLI Parser</span>
+              <span class="tech-tag">State Buffer</span>
+              <span class="tech-tag">Zero-Dep</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#terminal-section" class="project-link-btn">
+                <span>Try Terminal</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Scalable Backend Architecture -->
+          <article class="project-card" data-category="backend">
+            <div class="project-top">
+              <span class="project-badge">Backend Architecture</span>
+              <a href="https://github.com/aytamim83" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+            </div>
+
+            <h3 class="project-card-title">RESTful API & Clean Service Architecture</h3>
+            <p class="project-description">
+              Modular backend blueprint demonstrating controller-service-repository patterns, input validation pipelines, unified error boundaries, and database query optimization.
+            </p>
+
+            <ul class="project-highlights">
+              <li>Structured layer separation preventing business logic leakage into HTTP transport layers</li>
+              <li>Standardized JSON responses with strict HTTP status code semantics</li>
+              <li>Prepared for database indexing and connection pool scaling</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">Architecture</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Clean Code</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/aytamim83" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Competitive Programming & Problem Solving
+         ========================================================================= -->
+    <section class="section" id="problem-solving">
+      <div class="container">
+        <div class="cp-card">
+          <div class="cp-grid">
+            <div class="cp-content">
+              <div class="section-tag" style="color: var(--accent-cf); border-color: rgba(255, 184, 48, 0.3); background: rgba(255, 184, 48, 0.1);">// Competitive Arena</div>
+              <h3>Codeforces Competitive Programming</h3>
+              <p>
+                Testing speed, edge-case accuracy, and algorithmic efficiency in live rounds. Actively competing on Codeforces under the handle <strong style="color: #ffb830;">Aytamim83</strong> with optimal C++ STL templates.
+              </p>
+
+              <!-- Codeforces Handle Highlight Badge -->
+              <div class="cp-handle-badge">
+                <div class="cf-logo-bars">
+                  <span class="cf-bar-1"></span>
+                  <span class="cf-bar-2"></span>
+                  <span class="cf-bar-3"></span>
+                </div>
+                <div>
+                  <span style="font-size: 0.8rem; color: #94a3b8; display: block;">Codeforces Profile:</span>
+                  <a href="https://codeforces.com/profile/Aytamim83" target="_blank" rel="noopener noreferrer" style="font-weight: 700; color: #ffb830; font-family: var(--font-mono); font-size: 1.05rem;">
+                    Aytamim83 ↗
+                  </a>
+                </div>
+              </div>
+
+              <div class="cp-features">
+                <div class="cp-feature-box">
+                  <div class="cp-feature-title">Time & Space Rigor</div>
+                  <div class="cp-feature-desc">Ensuring algorithms operate within strict constraints ($T \le 1.0\text{s}$, $M \le 256\text{MB}$).</div>
+                </div>
+                <div class="cp-feature-box">
+                  <div class="cp-feature-title">Modern C++ STL</div>
+                  <div class="cp-feature-desc">Mastery of vectors, sets, maps, priority queues, and memory efficiency.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cp-terminal-snippet">
+              <div style="color: #64748b; margin-bottom: 0.5rem;">// Codeforces benchmark snippet</div>
+              <div style="color: #f43f5e;">#include &lt;bits/stdc++.h&gt;</div>
+              <div style="color: #a855f7;">using namespace</div> <span style="color: #e2e8f0;">std;</span>
+              <br>
+              <div style="color: #22c55e;">void solve() {</div>
+              <div style="padding-left: 1rem; color: #94a3b8;">
+                int n; cin &gt;&gt; n;<br>
+                vector&lt;int&gt; a(n);<br>
+                // O(N log N) optimal logic<br>
+                sort(a.begin(), a.end());
+              </div>
+              <div style="color: #22c55e;">}</div>
+              <br>
+              <div style="color: #38bdf8;">int main() {</div>
+              <div style="padding-left: 1rem; color: #94a3b8;">
+                ios_base::sync_with_stdio(false);<br>
+                cin.tie(NULL);<br>
+                solve(); return 0;
+              </div>
+              <div style="color: #38bdf8;">}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Education & Timeline
+         ========================================================================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="section-tag">// Milestones</div>
+          <h2 class="section-title">Academic & Engineering Journey</h2>
+          <p class="section-subtitle">Consistent academic dedication with a strong focus on mathematics, science, and computer science.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: University -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-period">Current — 2nd Year (Expected 2028)</div>
+              <h3 class="timeline-degree">BSc in Computer Science & Engineering</h3>
+              <div class="timeline-institution">Gopalganj Science & Technology University (GSTU)</div>
+              <ul class="timeline-details">
+                <li>• Core CS: Data Structures & Algorithms, Object-Oriented Programming (Java/C++), Structured Programming (C), Digital Logic.</li>
+                <li>• Theoretical Rigor: Mastered Discrete Mathematics (Graph theory, Logic, Combinatorics, Proofs).</li>
+                <li>• Interdisciplinary: Semiconductor Physics, Electrical Machine Mechanisms, and Financial Accounting.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2: College -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-period">Completed 2024</div>
+              <h3 class="timeline-degree">Higher Secondary Certificate (HSC) — Science</h3>
+              <div class="timeline-institution">Dhaka City College</div>
+              <ul class="timeline-details">
+                <li>• Analytical Mastery: Advanced Higher Mathematics (Differential & Integral Calculus, Vector Analysis, Coordinate Geometry), Physics, Chemistry, and ICT.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 3: School -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-period">Completed 2022</div>
+              <h3 class="timeline-degree">Secondary School Certificate (SSC) — Science</h3>
+              <div class="timeline-institution">Tamirul Millat Kamil Madrasha</div>
+              <ul class="timeline-details">
+                <li>• Completed with distinction, establishing deep foundations in Mathematics, General Sciences, and Arabic Language Proficiency.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Contact Section
+         ========================================================================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card-main">
+          <div class="section-tag">// Get In Touch</div>
+          <h3>Let's Build Something High-Impact Together</h3>
+          <p>
+            Whether you are looking for a dedicated Backend / Software Engineering Intern, want to collaborate on system architecture, or discuss algorithmic problem solving, feel free to reach out directly through any of these channels:
+          </p>
+
+          <!-- Contact Channels Grid -->
+          <div class="contact-channels-grid">
+            <!-- Email -->
+            <div class="contact-item-box copy-email-trigger" title="Click to copy email address">
+              <div class="contact-item-icon" style="color: var(--accent-cyan); background: rgba(6, 182, 212, 0.1);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-title">Email (Click to copy)</div>
+                <div class="contact-item-val dynamic-email">abuyousuftamim0@gmail.com</div>
+              </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/8801344623783" target="_blank" rel="noopener noreferrer" class="contact-item-box" title="Open WhatsApp Chat">
+              <div class="contact-item-icon" style="color: #25d366; background: rgba(37, 211, 102, 0.1);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-title">WhatsApp</div>
+                <div class="contact-item-val dynamic-whatsapp">+880 1344-623783</div>
+              </div>
+            </a>
+
+            <!-- Codeforces -->
+            <a href="https://codeforces.com/profile/Aytamim83" target="_blank" rel="noopener noreferrer" class="contact-item-box" title="View Codeforces Profile">
+              <div class="contact-item-icon" style="color: #ffb830; background: rgba(255, 184, 48, 0.1);">
+                <div class="cf-logo-bars">
+                  <span class="cf-bar-1" style="height: 8px;"></span>
+                  <span class="cf-bar-2" style="height: 14px;"></span>
+                  <span class="cf-bar-3" style="height: 11px;"></span>
+                </div>
+              </div>
+              <div>
+                <div class="contact-item-title">Codeforces</div>
+                <div class="contact-item-val">Aytamim83 ↗</div>
+              </div>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/abuyousuf.tamim.1" target="_blank" rel="noopener noreferrer" class="contact-item-box" title="View Facebook Profile">
+              <div class="contact-item-icon" style="color: #1877f2; background: rgba(24, 119, 242, 0.1);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-title">Facebook</div>
+                <div class="contact-item-val">Abu Yousuf Tamim ↗</div>
+              </div>
+            </a>
+          </div>
+
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="mailto:abuyousuftamim0@gmail.com" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Send Direct Email</span>
+            </a>
+            <a href="https://wa.me/8801344623783" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="border-color: #25d366; color: #25d366;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>Message on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span>&copy; <span id="currentYear">2026</span> Mohammad Tamim (Abu Yousuf Tamim). Crafted for Software & Backend Engineering.</span>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#hero">Back to top ↑</a></li>
+        <li><a href="https://github.com/aytamim83" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://codeforces.com/profile/Aytamim83" target="_blank" rel="noopener noreferrer">Codeforces</a></li>
+        <li><a href="https://wa.me/8801344623783" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        <li><a href="https://www.facebook.com/abuyousuf.tamim.1" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
